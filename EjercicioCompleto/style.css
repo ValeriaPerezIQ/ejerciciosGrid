@@ -95,7 +95,7 @@ body {
   
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 60px;
     gap: 30px;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOREsY1Wpg84YBd7PDk0K1Pz3_1SdREll6A&s') ;
