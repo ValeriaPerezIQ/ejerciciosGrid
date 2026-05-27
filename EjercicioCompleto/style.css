@@ -1,0 +1,250 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* =====================================
+   CONTENEDOR PRINCIPAL
+===================================== */
+
+.contenedorUniversal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    display: flex;
+    align-items: center;
+    /*    Centra verticalmente logo y menú.  En row:  align-items = vertical  */
+    justify-content: space-between;
+    background-color: rgb(22, 18, 21);
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo-header {
+
+    display: flex;
+    align-items: center;    /*    Centrado vertical.     */
+    gap: 20px;    /*     Espacio entre imagen y texto.     */
+
+}
+
+
+.imagenes-carrito {
+
+    width: 40px;    /*    Ancho fijo.     */
+    height: 30px;
+    object-fit: contain;     /*     Evita deformar la imagen   */
+
+}
+
+
+/* =====================================
+   MENÚ
+===================================== */
+
+.nav-menu {
+
+    display: flex;
+    align-items: center;    /*     Centrado vertical.    */
+    gap: 20px;    /*   Espacio entre links.    */
+
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.carrito{
+    position:relative;
+}
+
+.contador{
+    position: absolute;
+    top: -0.5px;
+    right: -0.5px;
+
+    background-color:lightgray;
+    color:gray;
+    border-radius:50%;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+.hero {
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 30px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOREsY1Wpg84YBd7PDk0K1Pz3_1SdREll6A&s') ;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+
+.hero-contenido {
+
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 400px;
+
+}
+
+
+/* =====================================
+   IMAGEN HERO
+===================================== */
+
+.hero-image img{
+display:flex;
+align-items: self-end;
+object-fit:contain;
+width:220px;
+}
+
+/* =====================================
+   BOTÓN PRIMARIO
+===================================== */
+
+.boton-primary {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 3px solid rgb(212, 162, 204);
+    background-color: rgb(212, 162, 204);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+
+  
+  
+}
+
+
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+#footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: gainsboro;
+
+    color: gray;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+  
+
+}
+
+
+
+/* =====================================
+   CARDS
+===================================== */
+
+
+.letreroProductos{
+ text-align: center;
+ font-size: 20px;
+
+
+}
+
+.cards {
+
+     display:grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    justify-items: center;
+    align-items:center;
+    padding:20px;
+    gap:10px;
+    
+    
+ 
+  }
+
+.tarjetaProducto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    padding:2px;
+    
+    width:300px;
+    border-radius:12px;
+    border:1px solid rgb(220,220,220);
+}
+
+.cardTexto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2px;
+
+}
+
+.tarjetaProducto img{
+
+    width:90%;
+
+    height:170px;
+    object-fit:cover;
+     border-radius:12px;
+     padding:10px;
+}
+
+
+/* =====================================
+   ICONOS FOOTER
+===================================== */
+
+.ifooter {
+
+    width: 30px;
+    height: 30px;
+    align-items:center;
+   object-fit: contain;
+}
