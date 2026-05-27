@@ -1,0 +1,104 @@
+
+.contenedorUniversal{
+    display: grid;
+    gap:20px;
+}
+
+
+
+h1{
+    font-size: 200px;
+    text-align: center;
+    color: lightcoral;
+     font-family: 'modern-love', sans-serif;
+
+
+}
+
+/*ejercicio uno*/
+.contenedorUno{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:10px;
+     background-color: rgb(214, 158, 166);
+    justify-items: center;
+    align-items: center ;
+}
+
+.itemUno {
+    border: 5px solid rgb(161, 28, 72);
+    width:200px;
+    height:200px;
+    font-size: 80px;
+   
+    
+}
+
+/*ejercicio dos*/
+.contenedorDos{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3, 1fr);
+background-color: rgb(214, 158, 166);
+    justify-items: center;
+    align-items: center ;
+}
+
+.itemDos {
+    border: 12px solid palevioletred;
+     width:200px;
+    height:200px;
+    font-size: 80px;
+    
+
+}
+/*ejercicio tres*/
+.contenedorTres{
+    display:grid;
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    background-color: lightpink;
+    gap:20px;
+ 
+     justify-items: stretch;
+     align-items: stretch;
+     
+
+}
+
+.itemTres {
+    border: 2px solid palevioletred;
+    padding:15px;
+
+
+
+
+}
+
+/*ejercicio cuatro*/
+.contenedorCuatro{
+    display:grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    justify-items: center;
+    align-items:center;
+    background-color: bisque;
+    gap:20px;
+    
+
+  
+  
+}
+
+.imagen {
+    border: 2px solid rgb(170, 47, 88);
+    padding:15px;
+
+    width: 50%;
+    height: 50%;
+
+    object-fit: cover; /* hace que la imagen no se deforme*/
+
+   
+    
+}
